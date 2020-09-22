@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Rubik-Light";
+    src: url("../fonts/Rubik-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Rubik-Bold";
+    src: url("../fonts/Rubik-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+.about {
+    max-width: 1920;
+    width: 100%;
+}
+
+.about-text {
+    max-width: 1336px;
+    width: 70%;
+    margin: 100px auto;
+}
+
+.about-text__title {
+    max-width: 519px;
+    width: 100%;
+    height: 41px;
+
+    font-family: 'Rubik-Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    text-align: left;
+    letter-spacing: -0.68px;
+    color: #3D3D3D;
+}
+
+.about-text__subtitle {
+    max-width: 1336px;
+    width: 100%;
+    height: auto;
+    font-family: 'Rubik-Light', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0.4px;
+    color: #3D3D3D;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-text__subtitle p {
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+.active::after {
+    content: ' ';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #FDD000;
+    border-radius: 10px;
+    top: 2.5rem;
+    right: 45%;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}

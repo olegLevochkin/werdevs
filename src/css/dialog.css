@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Rubik-Medium";
+    src: url("../fonts/Rubik-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+.dialogStyles  {
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    left: 35%;
+    top: 75%;
+    transform: tranlate(-50%,-50%);
+    z-index: 999;
+    background-color: #eee;
+    display:flex;
+    flex-direction: column;
+}
+.dialogCloseButtonStyles  {
+    background-color: #FDD000;
+    color: #3d3d3d;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+.dialog_data{
+    display: flex;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    font-family: "Rubik-Medium";
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    color: #A2A2A2;
+}
+input{
+    width: 220px;
+    height: 54px;
+    border: 2px solid #FDD000;
+    font-size: 22px;
+    font-family: "Rubik-Medium";
+    padding-left: 20px;
+}
+@media (max-width: 480px) {
+    .dialogStyles{
+        left:10%;
+        width: 80%;
+        margin: 0px auto;
+    }
+    .dialog_data{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*label{*/
+    /*    flex-direction: column;*/
+    /*}*/
+}
