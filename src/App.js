@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {Header} from './components';
-import {About, Home} from './pages';
-import { BrowserRouter, Route } from 'react-router-dom';
+import {Header} from './components/components';
+import {About, Home} from './pages/pages';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 function App() {
 

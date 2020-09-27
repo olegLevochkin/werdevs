@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import '../css/dialog.css'
+import React from 'react';
+import '../styles/css/dialog.css'
 
 
 class Dialog extends React.Component {
@@ -30,6 +30,7 @@ class Dialog extends React.Component {
                 break;
         }
     }
+
     Month(month) {
         switch (month) {
             case 'Jan' :
@@ -72,6 +73,7 @@ class Dialog extends React.Component {
                 break;
         }
     }
+
     Day(day) {
         switch (day) {
             case '01' :
@@ -105,16 +107,16 @@ class Dialog extends React.Component {
                 return '3d';
                 break;
             default:
-                return day+"th"
+                return day + "th"
                 break;
         }
     }
 
 
     render() {
-        const week = this.props.children.slice(0,3);
-        const month = this.props.children.slice(4,7);
-        const day = this.props.children.slice(8,10);
+        const week = this.props.children.slice(0, 3);
+        const month = this.props.children.slice(4, 7);
+        const day = this.props.children.slice(8, 10);
 
         let dialog = (
             <div className='dialogStyles'>
@@ -122,11 +124,11 @@ class Dialog extends React.Component {
                 <div className="dialog_data">
                     <label>
                         Month
-                        <input type="text" name="name" value={this.Month(month)} />
+                        <input type="text" name="name" defaultValue={this.Month(month)}/>
                     </label>
                     <label>
                         Day
-                        <input type="text" name="name"  value={this.Day(day) + " " + this.Week(week) } />
+                        <input type="text" name="name" defaultValue={this.Day(day) + " " + this.Week(week)}/>
                     </label>
                 </div>
 
@@ -135,10 +137,10 @@ class Dialog extends React.Component {
         if (!this.props.isOpen) {
             dialog = null;
         }
-            return (
-                dialog
+        return (
+            dialog
 
-            )
+        )
     }
 
 }

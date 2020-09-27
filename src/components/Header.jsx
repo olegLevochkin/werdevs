@@ -2,7 +2,7 @@ import React from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import classnames from "classnames";
 
-import logo from '../assets/img/logo.jpg';
+import logo from '../styles/img/logo.jpg';
 
 function Header() {
     const [url, setUrl] = React.useState();
@@ -19,14 +19,15 @@ function Header() {
                         <img src={logo} alt="logo"/>
                     </div>
                 </Link>
-                <ul className="nav" >
+                <ul className="nav">
                     <Link to="/">
-                        <li className="nav__item nav__item_active"><a className="nav__link" id="home" >Home</a></li>
+                        <li className="nav__item nav__item_active"><span className="nav__link" id="home">Home</span>
+                        </li>
                     </Link>
                     <Link to="/about">
-                        <li className="nav__item"><a  className={classnames('nav__link', {
+                        <li className="nav__item"><span className={classnames('nav__link', {
                             'active': url === '/about'
-                        })} id="about">About us</a></li>
+                        })} id="about">About us</span></li>
                     </Link>
                 </ul>
             </div>
