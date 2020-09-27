@@ -12,8 +12,6 @@
     margin: 0 auto;
     left: 35%;
     top: 75%;
-    transform: tranlate(-50%, -50%);
-    z-index: 999;
     background-color: #eee;
     display: flex;
     flex-direction: column;
@@ -65,8 +63,4 @@ input {
         flex-direction: column;
         align-items: center;
     }
-
-    /*label{*/
-    /*    flex-direction: column;*/
-    /*}*/
 }

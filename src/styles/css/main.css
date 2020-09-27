@@ -1,4 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');*/
 @import "about.css";
 @import "home.css";
 
@@ -39,9 +38,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-.header__logo {
 }
 
 .header__logo img {
@@ -85,21 +81,6 @@ a {
     color: #3D3D3D;
     text-transform: uppercase;
     text-align: left;
-}
-
-
-@media (max-width: 1440px) {
-
-}
-
-@media (max-width: 1200px) {
-
-}
-
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 768px) {
 }
 
 @media (max-width: 480px) {
